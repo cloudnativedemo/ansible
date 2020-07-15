@@ -1,0 +1,5 @@
+---
+- name: Reboot host task
+  reboot:
+    reboot_timeout: 120
+    test_command: uptime

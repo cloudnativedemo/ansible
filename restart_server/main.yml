@@ -1,0 +1,8 @@
+---
+- name: Reboot a Linux host
+  become: yes
+  become_user: root
+  hosts: webservers
+
+  roles:
+  - restart_server
