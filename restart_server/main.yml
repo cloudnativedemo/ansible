@@ -2,7 +2,7 @@
 - name: Reboot a Linux host
   become: yes
   become_user: root
-  hosts: webservers
+  hosts: web
 
   roles:
   - restart_server
