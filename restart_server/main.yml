@@ -2,7 +2,7 @@
 - name: Reboot a Linux host
   become: yes
   become_user: root
-  hosts: "{{ variable_host | default('all') }}"
+  hosts: "{{ variable_host }}"
 
   roles:
   - restart_server
